@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Environment variables — NEVER commit these
+.env
+.env.local
+.env.production
+.env.development
+
+# Next.js build output
+.next/
+out/
+
+# TypeScript build output
+dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# PM2
+ecosystem.config.js
