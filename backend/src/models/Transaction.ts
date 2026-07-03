@@ -17,7 +17,7 @@ export interface IParsedIntent {
 }
 
 export interface ITransaction extends Document {
-  userId: mongoose.Types.ObjectId;
+  userId: string;
   walletAddress: string;
   parsedIntent: IParsedIntent;
   txHash?: string;
