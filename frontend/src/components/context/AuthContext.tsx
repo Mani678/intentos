@@ -24,9 +24,9 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | null>(null);
 
-let magicInstance: Magic | null = null;
+let magicInstance: any = null;
 
-const getMagic = (): Magic => {
+const getMagic = (): any => {
   if (!magicInstance && typeof window !== 'undefined') {
     magicInstance = new Magic(process.env.NEXT_PUBLIC_MAGIC_PUBLISHABLE_KEY!, {
       extensions: [new OAuthExtension()],

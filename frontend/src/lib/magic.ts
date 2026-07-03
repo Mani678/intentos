@@ -12,7 +12,7 @@ const createMagic = () => {
       rpcUrl: ARBITRUM_RPC,
       chainId: ARBITRUM_CHAIN_ID,
     },
-  });
+  }) as any;
 };
 
 export const magic = createMagic();
