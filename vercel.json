@@ -1,5 +1,5 @@
 {
-  "services": {
+  "experimentalServices": {
     "frontend": {
       "root": "frontend",
       "framework": "nextjs"
@@ -10,7 +10,7 @@
   },
   "rewrites": [
     {
-      "source": "/api/backend/(.*)",
+      "source": "/api/(.*)",
       "destination": {
         "type": "service",
         "service": "backend"
